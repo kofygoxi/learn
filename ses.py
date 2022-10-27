@@ -7,7 +7,7 @@ from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 
 def send_by_SDK(SUBJECT, BODY_TEXT, BODY_HTML):
-    session = boto3.Session(profile_name=os.getenv("AWS_PROFILE"))
+    session = boto3.Session(aws_access_key_id=os.getenv("AWS_KEY_DEVADMIN"), aws_secret_access_key=os.getenv("AWS_SECRET_DEVADMIN"))
     client = session.client(
         'ses',
         region_name=os.getenv("AWS_REGION")
@@ -76,5 +76,5 @@ if __name__ == "__main__":
     </html>
     """
     
-    #send_by_SDK(SUBJECT, BODY_TEXT, BODY_HTML)
-    send_by_SMTP(SUBJECT, BODY_TEXT, BODY_HTML)
+    send_by_SDK(SUBJECT, BODY_TEXT, BODY_HTML)
+    #send_by_SMTP(SUBJECT, BODY_TEXT, BODY_HTML)
