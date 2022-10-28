@@ -1,0 +1,19 @@
+{
+    "ContactListName":"mylist",
+    "Topics": [
+        {
+            "TopicName": "T1",
+            "DisplayName": "Topic 1",
+            "Description": "",
+            "DefaultSubscriptionStatus": "OPT_OUT"
+        },
+        {
+            "TopicName": "TDetault",
+            "DisplayName": "T Default Subscription",
+            "Description": "",
+            "DefaultSubscriptionStatus": "OPT_IN"
+        }
+
+    ],
+    "Description":""
+}

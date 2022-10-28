@@ -1,0 +1,12 @@
+{
+    "ContactListName":"mylist",
+    "EmailAddress":"steve@example.com",
+    "TopicPreferences": [
+        {
+            "TopicName": "T1",
+            "SubscriptionStatus": "OPT_OUT"
+        }
+    ],
+    "UnsubscribeAll":false,
+    "AttributesData":"{\"FirstName\":\"Steve\",\"LastName\":\"Z\",\"Company\":\"Example\"}"
+}

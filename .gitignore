@@ -1,5 +1,6 @@
 .dotenv
 .venv
+testing_data
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
